@@ -1,0 +1,115 @@
+/* Global styles for the Reel動画プラットフォーム */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Ensure full width and height */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Common styles for video player */
+.video-player {
+  margin: 20px 0;
+}
+
+/* Styles for the video uploader component */
+.video-uploader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.video-uploader input[type="file"] {
+  margin-bottom: 10px;
+}
+
+.video-uploader button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.video-uploader button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for the profile component */
+.profile {
+  padding: 20px;
+}
+
+.profile .video-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.profile .video-item {
+  width: calc(33.333% - 20px);
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the home page */
+.home-page {
+  padding: 20px;
+}
+
+.home-page .video-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.home-page .video-item {
+  width: calc(33.333% - 20px);
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the upload page */
+.upload-page {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Common styles for headings */
+h1, h2, h3 {
+  color: #333;
+}
+
+/* Loading text style */
+div.loading {
+  text-align: center;
+  padding: 20px;
+}
+
+/* No content message style */
+p {
+  text-align: center;
+  color: #666;
+}
+
+/* App container */
+.app {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
